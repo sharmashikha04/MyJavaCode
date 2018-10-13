@@ -11,10 +11,10 @@ public class Main {
         Circle circle=null; //reference variable declarstion
 
         circle=new FullCircle(); //creating object of type FullCircle on ref. variable circle
-        circle.areaOfCircle(10);
+        circle.perimeterOfCircle(10);
 
         circle=new SemiCircle();  //creating object of type SemiCircle on ref. variable circle
-        circle.areaOfCircle(10);
+        circle.perimeterOfCircle(10);
 
 
     }
