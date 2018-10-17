@@ -1,14 +1,36 @@
 package com.shikha;
 
 
-import com.shikha.oops.myabstractclass.Circle;
-import com.shikha.oops.myabstractclass.FullCircle;
-import com.shikha.oops.myabstractclass.SemiCircle;
+import com.shikha.oops.myencapsul.Student;
+import com.shikha.oops.myoverload.Test;
+import com.shikha.oops.myoverrid.Child;
+import com.shikha.oops.myoverrid.Parent;
 
 public class Main {
 
     public static void main(String[] args) {
+        Parent p=new Parent();
+        p.marry();
+        Child c=new Child();
+        c.marry();
+        Parent p1=new Parent();
+        p1.marry();
 
+
+       /*  Test t=new Test();
+        t.show();
+        t.show(10);
+        t.show(10.5);
+*/
+
+        /*Student s=new Student();
+        s.setName("Shikha");
+        s.setRollno(10);
+        s.setMarks(55.5);
+        System.out.println("Name of student is:"+s.getName());
+        System.out.println("Rollno of student is:"+s.getRollno());
+        System.out.println("Marks of student is:"+s.getMarks());
+*/
 
        // Circle circle=null; //reference variable declarstion
 
@@ -19,7 +41,7 @@ public class Main {
         //circle.perimeterOfCircle(10);
 
 
-        double tempResult;
+       /* double tempResult;
         Circle circle=null;
 
         circle=new FullCircle();
@@ -30,7 +52,7 @@ public class Main {
         circle=new SemiCircle();
         tempResult=circle.areaofcircle(2.3);
         circle.disply("Semi Circle",tempResult);
-
+*/
 
 
     }
