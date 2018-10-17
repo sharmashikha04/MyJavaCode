@@ -3,15 +3,25 @@ package com.shikha;
 
 import com.shikha.oops.myencapsul.Student;
 import com.shikha.oops.myoverload.Test;
+import com.shikha.oops.myoverrid.Child;
+import com.shikha.oops.myoverrid.Parent;
 
 public class Main {
 
     public static void main(String[] args) {
-        Test t=new Test();
+        Parent p=new Parent();
+        p.marry();
+        Child c=new Child();
+        c.marry();
+        Parent p1=new Parent();
+        p1.marry();
+
+
+       /*  Test t=new Test();
         t.show();
         t.show(10);
         t.show(10.5);
-
+*/
 
         /*Student s=new Student();
         s.setName("Shikha");
