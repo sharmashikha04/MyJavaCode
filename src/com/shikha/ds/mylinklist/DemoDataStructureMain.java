@@ -66,8 +66,6 @@ public class DemoDataStructureMain {
 
 
                 case 5:
-                    System.out.println("please enter the location:");
-                    location = Integer.parseInt(br.readLine());
                     s.deletelast();
                     break;
 

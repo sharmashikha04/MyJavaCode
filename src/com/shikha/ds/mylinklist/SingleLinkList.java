@@ -126,13 +126,17 @@ class SingleLinklist {
 
         }else {
 
+            temp=start;
+            Node temp2=temp;
+            while (temp.address != null) {
 
-            if (temp.address != null) {
-                temp=start;
-                System.out.println("deleting node: "+temp.address);
-                start=temp.address;
+                temp2=temp;
+                temp=temp.address;
 
             }
+
+            System.out.println("deleting node: "+temp.data);
+            temp2.address=null;
         }
     }
 
