@@ -131,7 +131,7 @@ class SingleLinklist {
             while (temp.address != null) {
 
                 temp2=temp;
-                temp=temp.address;
+                temp2=temp.address;
 
             }
 
@@ -140,10 +140,36 @@ class SingleLinklist {
         }
     }
 
+       void  deletemiddle(int location) {
+        Node temp2;
+        int count = 1;
+        temp2=temp;
+
+        if (start == null) {
+            System.out.println("list is empty");
+
+        }else {
+            temp = start;
+            while (temp != null && count != location) {
+                temp2 = temp;
+                temp = temp.address;
+                 count++;
+            }
 
 
+            if (count != location) {
+                System.out.println("out of range");
+            } else if (count == location && location == 1) {
+                System.out.println(" Item deleted is " + temp.data);
+                start = start.address;
+            } else {
 
+                System.out.println(" Item deleted is "+temp.data);
+                temp2.address=temp.address;
+            }
 
+        }
+    }
 
     void display() {
         Node temp = null;

@@ -16,8 +16,9 @@ public class DemoDataStructureMain {
        SingleLinklist s=new SingleLinklist();
 
 
-
-        int option;
+        String Name,city;
+        double percentage;
+        int option,rollno;
         int num = 0;
         int location=1;
         while (true) {
@@ -28,8 +29,9 @@ public class DemoDataStructureMain {
             System.out.println("3:Addmiddle() ");
             System.out.println("4:delete from first() ");
             System.out.println("5:delete from  last() ");
-            System.out.println("6:display the num");
-            System.out.println("7:exit");
+            System.out.println("6:delete from middele() ");
+            System.out.println("7:display the num");
+            System.out.println("8:exit");
 
 
             option = Integer.parseInt(br.readLine());
@@ -64,18 +66,21 @@ public class DemoDataStructureMain {
                     s.deleteFirst();
                     break;
 
-
                 case 5:
                     s.deletelast();
                     break;
 
-                case 6:
-                   s.display();
+                case 6:System.out.println("Enter the location to delete:");
+                    location = Integer.parseInt(br.readLine());
+                    s.deletemiddle(location);
+                    break;
 
-                  break;
+                case 7:
 
+                    s.display();
+                    break;
 
-                    case 7:
+                case 8:
                     System.exit(0);
 
 
